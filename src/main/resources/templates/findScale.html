@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:margin="http://www.w3.org/1999/xhtml"
+      xmlns:form="http://www.w3.org/1999/xhtml">
+
+<head>
+    <div th:replace="fragments/fragments :: head"></div>
+    <title>Find Scale</title>
+</head>
+<body>
+<nav th:replace="fragments/fragments :: navigation"></nav>
+
+<center><h2><u>Find scale</u></h2></center>
+<center>
+    <p>Write notes in "note" field and pres send to find appropriate scale</p>
+<form>
+
+    <input  th:type="text" th:name="note1" th:placeholder="note"/>
+    <input  th:type="text" th:name="note2" th:placeholder="note"/>
+    <input  th:type="text" th:name="note3" th:placeholder="note"/>
+    <input  th:type="text" th:name="note4" th:placeholder="note"/>
+    <input  th:type="text" th:name="note5" th:placeholder="note"/>
+    <input  th:type="text" th:name="note6" th:placeholder="note"/>
+    <input  th:type="text" th:name="note7" th:placeholder="note"/>
+    <input  th:type="text" th:name="note8" th:placeholder="note"/>
+    <input th:type="submit" value="Send" />
+
+</form>
+</center>
+
+</body>
+</html>

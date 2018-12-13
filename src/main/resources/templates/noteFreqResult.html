@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+    <div th:replace="fragments/fragments :: head"></div>
+    <title>resultNote</title>
+
+</head>
+<body>
+
+<nav th:replace="fragments/fragments :: navigation"></nav>
+
+<center><h2><u>Note Frequencies in Hz</u></h2></center>
+
+<center>
+
+    <table class="table" >
+
+        <tr>
+            <th>Octave 0</th>
+            <th>Octave 1</th>
+            <th>Octave 2</th>
+            <th>Octave 3</th>
+            <th>Octave 4</th>
+            <th>Octave 5</th>
+            <th>Octave 6</th>
+            <th>Octave 7</th>
+            <th>Octave 8</th>
+            <th>Octave 9</th>
+            <th>Octave 10</th>
+
+        </tr>
+        <tr th:each="list : ${arrayOfFreq}">
+
+                <td th:text="${list.octa0}"/>
+                <td th:text="${list.octa1}"/>
+                <td th:text="${list.octa2}"/>
+                <td th:text="${list.octa3}"/>
+                <td th:text="${list.octa4}"/>
+                <td th:text="${list.octa5}"/>
+                <td th:text="${list.octa6}"/>
+                <td th:text="${list.octa7}"/>
+                <td th:text="${list.octa8}"/>
+                <td th:text="${list.octa9}"/>
+                <td th:text="${list.octa10}"/>
+
+
+    </table>
+
+</center>
+
+</body>
+</html>

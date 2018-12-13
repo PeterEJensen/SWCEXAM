@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/fragments :: head"></div>
+    <title>showNoteFreqShow Note Frequencies</title>
+
+</head>
+<body>
+
+<nav th:replace="fragments/fragments :: navigation"></nav>
+<center><h2><u>Find Note Frequencies</u></h2></center>
+
+<center>
+    <p>Choose a note</p>
+
+    <div class="container">
+
+
+        <form  th:action="@{/noteFreq}" th:method="post">
+            <button name="note" type="submit" value="a">A</button>
+            <button name="note" type="submit" value="a#">Bb</button>
+            <button name="note" type="submit" value="b">B</button>
+            <button name="note" type="submit" value="c">C</button>
+            <button name="note" type="submit" value="c#">C#</button>
+            <button name="note" type="submit" value="d">D</button>
+            <button name="note" type="submit" value="d#">D#</button>
+            <button name="note" type="submit" value="e">E</button>
+            <button name="note" type="submit" value="f">F</button>
+            <button name="note" type="submit" value="f#">F#</button>
+            <button name="note" type="submit" value="g">G</button>
+            <button name="note" type="submit" value="g#">G#</button>
+
+        </form>
+
+    </div>
+
+</center>
+
+
+</body>
+</html>

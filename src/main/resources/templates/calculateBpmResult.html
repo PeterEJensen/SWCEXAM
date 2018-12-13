@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/fragments :: head"></div>
+    <title>Result</title>
+
+</head>
+<body>
+
+<nav th:replace="fragments/fragments :: navigation"></nav>
+
+<center><h2><u>Reverb Time in ms:</u></h2></center>
+
+
+<table>
+
+        <tr>
+            <th>Type</th>
+            <th>1/1 Note</th>
+            <th>1/2 Note</th>
+            <th>1/4 Note</th>
+            <th>1/8 Note</th>
+            <th>1/16 Note</th>
+            <th>1/32 Note</th>
+            <th>1/64 Note</th>
+
+        </tr>
+
+        <tr th:each="list : ${arrayOfRevtimes}">
+            <th>Standard</th>
+            <td th:text="${list.wholeNote}"></td>
+            <td th:text="${list.halfNote}"></td>
+            <td th:text="${list.fourthNote}"></td>
+            <td th:text="${list.eightNote}"></td>
+            <td th:text="${list.sixteenNote}"></td>
+            <td th:text="${list.thertyTwoNote}"></td>
+            <td th:text="${list.sixtyfourNote}"></td>
+
+
+        </tr>
+
+    <tr th:each="list : ${arrayOfDottedtimes}">
+        <th>Dotted</th>
+        <td th:text="${list.wholeNote}"></td>
+        <td th:text="${list.halfNote}"></td>
+        <td th:text="${list.fourthNote}"></td>
+        <td th:text="${list.eightNote}"></td>
+        <td th:text="${list.sixteenNote}"></td>
+        <td th:text="${list.thertyTwoNote}"></td>
+        <td th:text="${list.sixtyfourNote}"></td>
+
+
+    </tr>
+
+    <tr th:each="list : ${arrayOfTripletTimes}">
+        <th>Triplet</th>
+        <td th:text="${list.wholeNote}"></td>
+        <td th:text="${list.halfNote}"></td>
+        <td th:text="${list.fourthNote}"></td>
+        <td th:text="${list.eightNote}"></td>
+        <td th:text="${list.sixteenNote}"></td>
+        <td th:text="${list.thertyTwoNote}"></td>
+        <td th:text="${list.sixtyfourNote}"></td>
+
+
+    </tr>
+
+    </table>
+
+</body>
+</html>
