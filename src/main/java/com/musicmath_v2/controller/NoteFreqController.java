@@ -22,24 +22,21 @@ public class NoteFreqController {
     FreqEntity f = new FreqEntity();
 
     @GetMapping("/getNoteFreq")
-    public String getNoteFreq()
-    {
+    public String getNoteFreq() {
 
         return "noteFreq";
     }
 
     @PostMapping("/noteFreq")
-    public String noteFreqResult(@RequestParam("note") String note)
-    {
+    public String noteFreqResult(@RequestParam("note") String note) {
         fR.freqCal(note);
         return "redirect:/noteFreqResult";
     }
 
     @GetMapping("/noteFreqResult")
-    public String getNoteFreqResult(Model model)
-    {
-        model.addAttribute("noteName",f.getNoteName());
-        model.addAttribute("arrayOfFreq",fR.getAll());
+    public String getNoteFreqResult(Model model) {
+        model.addAttribute("noteName", f.getNoteName());
+        model.addAttribute("arrayOfFreq", fR.getAll());
         return "noteFreqResult";
     }
 }

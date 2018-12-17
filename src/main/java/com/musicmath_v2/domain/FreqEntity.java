@@ -1,8 +1,6 @@
 package com.musicmath_v2.domain;
 
 
-
-
 public class FreqEntity {
 
 
@@ -139,7 +137,6 @@ public class FreqEntity {
     public void setNoteName(String noteName) {
         this.noteName = noteName;
     }
-
 
 
 }

@@ -11,7 +11,7 @@ public class DottedBpmEntity {
     private double thertyTwoNote;
     private double sixtyfourNote;
 
-    public DottedBpmEntity(){
+    public DottedBpmEntity() {
     }
 
     public DottedBpmEntity(double wholeNote, double halfNote, double fourthNote, double eightNote, double sixteenNote, double thertyTwoNote, double sixtyfourNote) {

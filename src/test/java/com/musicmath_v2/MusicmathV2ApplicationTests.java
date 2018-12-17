@@ -10,8 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class MusicmathV2ApplicationTests {
 
     @Test
-    public void contextLoads()
-    {
+    public void contextLoads() {
 
 
     }

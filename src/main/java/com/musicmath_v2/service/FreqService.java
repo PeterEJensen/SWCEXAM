@@ -1,20 +1,19 @@
 package com.musicmath_v2.service;
 
 
-
 import com.musicmath_v2.domain.FreqEntity;
 import com.musicmath_v2.repository.FreqRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+
 @Service
 public class FreqService implements FreqRepo {
 
 
     private FreqEntity f = new FreqEntity();
 
-    public void freqCal(String note)
-    {
+    public void freqCal(String note) {
 
         switch (note) {
             case "c": {
@@ -206,11 +205,10 @@ public class FreqService implements FreqRepo {
 
     }
 
-    public ArrayList<FreqEntity> getAll()
-    {
-        ArrayList<FreqEntity>freqList = new ArrayList<>();
+    public ArrayList<FreqEntity> getAll() {
+        ArrayList<FreqEntity> freqList = new ArrayList<>();
 
-        freqList.add(new FreqEntity(f.getOcta0(),f.getOcta1(),f.getOcta2(),f.getOcta3(),f.getOcta4(),f.getOcta5(),f.getOcta6(),f.getOcta7(),f.getOcta8(),f.getOcta9(),f.getOcta10()));
+        freqList.add(new FreqEntity(f.getOcta0(), f.getOcta1(), f.getOcta2(), f.getOcta3(), f.getOcta4(), f.getOcta5(), f.getOcta6(), f.getOcta7(), f.getOcta8(), f.getOcta9(), f.getOcta10()));
 
         return freqList;
     }

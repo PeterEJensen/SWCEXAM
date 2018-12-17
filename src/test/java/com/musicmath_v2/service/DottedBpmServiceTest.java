@@ -10,13 +10,12 @@ public class DottedBpmServiceTest {
     DottedBpmEntity de = new DottedBpmEntity();
 
 
-
     @Test
     public void dottedBpm64() {
 
 
         de.setSixtyfourNote(d.dottedBpm(120));
-        assertEquals(46.875,de.getSixtyfourNote(),0000.00000);
+        assertEquals(46.875, de.getSixtyfourNote(), 0000.00000);
 
     }
 

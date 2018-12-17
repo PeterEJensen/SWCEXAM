@@ -29,26 +29,23 @@ public class CalculateController {
     TripletBpmRepo tbR;
 
     @GetMapping("/getCalculateBpm")
-    public String getCalculateBpm()
-    {
+    public String getCalculateBpm() {
 
         return "calculateBpm";
     }
 
     @PostMapping("/postCalculateBpm")
-    public String calculateBpmResult(@RequestParam("bpm")  double bpm)
-    {
+    public String calculateBpmResult(@RequestParam("bpm") double bpm) {
 
-                rR.revBpm(bpm);
-                dbR.dottedBpm(bpm);
-                tbR.tripletBpm(bpm);
-                return "redirect:/getCalculateBpmResult";
+        rR.revBpm(bpm);
+        dbR.dottedBpm(bpm);
+        tbR.tripletBpm(bpm);
+        return "redirect:/getCalculateBpmResult";
     }
 
     @GetMapping("/getCalculateBpmResult")
-    public String printCalculateResult(Model model)
-    {
-        model.addAttribute("arrayOfRevtimes",rR.getAll());
+    public String printCalculateResult(Model model) {
+        model.addAttribute("arrayOfRevtimes", rR.getAll());
         model.addAttribute("arrayOfDottedtimes", dbR.getAll());
         model.addAttribute("arrayOfTripletTimes", tbR.getAll());
         return "calculateBpmResult";

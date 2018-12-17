@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FreqServiceTest {
-    
+
     FreqService fs = new FreqService();
     FreqEntity fe = new FreqEntity();
 
@@ -14,7 +14,7 @@ public class FreqServiceTest {
     public void toneFrek() {
 
         fe.setOcta1(440);
-        assertEquals(440,fe.getOcta1(),0.00);
+        assertEquals(440, fe.getOcta1(), 0.00);
 
     }
 

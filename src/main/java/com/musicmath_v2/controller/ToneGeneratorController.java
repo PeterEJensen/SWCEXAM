@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ToneGeneratorController {
 
     @GetMapping("/getToneGenerator")
-    public String getToneGenerator()
-    {
+    public String getToneGenerator() {
         return "toneGenerator";
     }
 }

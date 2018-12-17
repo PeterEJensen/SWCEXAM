@@ -11,12 +11,11 @@ public class TripletBpmServiceTest {
     TripletBpmEntity tE = new TripletBpmEntity();
 
 
-
     @Test
     public void tripletBpm64() {
 
         tE.setSixtyfourNote(tS.tripletBpm(120));
-        assertEquals(20.84375,tE.getSixtyfourNote(),0000.00000);
+        assertEquals(20.84375, tE.getSixtyfourNote(), 0000.00000);
 
     }
 

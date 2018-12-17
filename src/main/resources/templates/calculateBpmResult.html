@@ -14,30 +14,30 @@
 
 <table>
 
-        <tr>
-            <th>Type</th>
-            <th>1/1 Note</th>
-            <th>1/2 Note</th>
-            <th>1/4 Note</th>
-            <th>1/8 Note</th>
-            <th>1/16 Note</th>
-            <th>1/32 Note</th>
-            <th>1/64 Note</th>
+    <tr>
+        <th>Type</th>
+        <th>1/1 Note</th>
+        <th>1/2 Note</th>
+        <th>1/4 Note</th>
+        <th>1/8 Note</th>
+        <th>1/16 Note</th>
+        <th>1/32 Note</th>
+        <th>1/64 Note</th>
 
-        </tr>
+    </tr>
 
-        <tr th:each="list : ${arrayOfRevtimes}">
-            <th>Standard</th>
-            <td th:text="${list.wholeNote}"></td>
-            <td th:text="${list.halfNote}"></td>
-            <td th:text="${list.fourthNote}"></td>
-            <td th:text="${list.eightNote}"></td>
-            <td th:text="${list.sixteenNote}"></td>
-            <td th:text="${list.thertyTwoNote}"></td>
-            <td th:text="${list.sixtyfourNote}"></td>
+    <tr th:each="list : ${arrayOfRevtimes}">
+        <th>Standard</th>
+        <td th:text="${list.wholeNote}"></td>
+        <td th:text="${list.halfNote}"></td>
+        <td th:text="${list.fourthNote}"></td>
+        <td th:text="${list.eightNote}"></td>
+        <td th:text="${list.sixteenNote}"></td>
+        <td th:text="${list.thertyTwoNote}"></td>
+        <td th:text="${list.sixtyfourNote}"></td>
 
 
-        </tr>
+    </tr>
 
     <tr th:each="list : ${arrayOfDottedtimes}">
         <th>Dotted</th>
@@ -65,7 +65,7 @@
 
     </tr>
 
-    </table>
+</table>
 
 </body>
 </html>

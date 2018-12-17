@@ -1,8 +1,6 @@
 package com.musicmath_v2.domain;
 
 
-
-
 public class RevEntity {
 
 
@@ -13,7 +11,6 @@ public class RevEntity {
     private double sixteenNote;
     private double thertyTwoNote;
     private double sixtyfourNote;
-
 
 
     public RevEntity() {
@@ -30,8 +27,6 @@ public class RevEntity {
         this.thertyTwoNote = thertyTwoNote;
         this.sixtyfourNote = sixtyfourNote;
     }
-
-
 
 
     public double getWholeNote() {

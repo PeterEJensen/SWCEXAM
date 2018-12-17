@@ -17,12 +17,11 @@
 <center>
     <p>Type in BPM</p>
 
-    <form  th:action="@{/postCalculateBpm}" th:method="post">
+    <form th:action="@{/postCalculateBpm}" th:method="post">
 
 
-            <input  th:type="number" th:name="bpm" th:placeholder="BPM"/>
-        <input th:type="submit" value="Send" />
-
+        <input th:type="number" th:name="bpm" th:placeholder="BPM"/>
+        <input th:type="submit" value="Send"/>
 
 
     </form>

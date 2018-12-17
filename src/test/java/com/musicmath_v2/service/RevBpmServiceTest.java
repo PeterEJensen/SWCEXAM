@@ -15,7 +15,7 @@ public class RevBpmServiceTest {
     public void tripletBpm64() {
 
         rE.setSixtyfourNote(rS.revBpm(120));
-        assertEquals(31.25,rE.getSixtyfourNote(),0000.00000);
+        assertEquals(31.25, rE.getSixtyfourNote(), 0000.00000);
 
     }
 
